@@ -1,14 +1,13 @@
 import React from 'react'
-import { ThemeProvider } from './component/context/Context'
-import Header from './component/header/Header'
+import { UserProvider } from './loginstatus/context/Context'
+import Router from './loginstatus/router/Router'
+
 
 const App = () => {
   return (
-    <ThemeProvider>
-      <div>
-        <Header />
-      </div>
-    </ThemeProvider>
+    <UserProvider>
+      <Router />
+    </UserProvider>
   )
 }
 
